@@ -1,0 +1,112 @@
+@import "../../stylevar.scss";
+
+.heropg {
+  height: 80vh;
+  width: 100vw;
+  background-image: url("../../assets/img1.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .gard {
+    position: absolute;
+    height: 80vh;
+    width: 100vw;
+    background-color: black;
+    opacity: 0.4;
+    z-index: 0;
+  }
+  .list {
+    z-index: 1;
+    display: flex;
+    gap: 40px;
+    .alldropdown {
+      display: flex;
+      // flex-wrap: wrap;
+      justify-content: space-between;
+      width: 50vw;
+      height: 60px;
+      border-radius: 8px;
+      background-color: rgb(255, 255, 255);
+      .DateDrop {
+        // position: relative;
+        position: absolute;
+        width: 12vw;
+        height: 60px;
+        opacity: 0;
+      }
+      .drop {
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        justify-content: space-between;
+        border: none;
+        border-right: 1px solid gray;
+        width: 15vw;
+        padding: 0 10px;
+        height: 100%;
+        font-size: 1em;
+        font-weight: 600;
+      }
+      .total {
+        display: flex;
+        // flex-grow: 1;
+        width: 20vw;
+        align-items: center;
+        padding: 20px;
+        // align-items: center;
+        // justify-content: center;
+        font-size: 1em;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      .dropdown {
+        scale: 0.75;
+        position: relative;
+        padding: 20px 20px;
+        top: -30px;
+        left: -52px;
+        width: 120%;
+        height: fit-content;
+        border-radius: 8px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+          rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        z-index: 1;
+        .tiles {
+          display: flex;
+          gap: 20px;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 20px;
+          button {
+            color: teal;
+            border-radius: 8px;
+            border: 2px solid teal;
+            padding: 10px 40px;
+            font-weight: 600;
+            background: none;
+            margin: 0px auto;
+            cursor: pointer;
+            transition: 0.2s ease-in-out;
+          }
+          button:hover {
+            color: ghostwhite;
+            background-color: teal;
+          }
+        }
+        .tiles-info span {
+          color: rgba(22, 22, 22, 0.5);
+        }
+      }
+    }
+    .cheakAvl {
+      font-size: 1rem;
+      padding: 0 40px;
+      font-weight: 600;
+      background-color: rgb(255, 208, 0);
+      border: none;
+      border-radius: 8px;
+    }
+  }
+}

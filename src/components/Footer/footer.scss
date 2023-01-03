@@ -1,0 +1,10 @@
+@import "../../stylevar.scss";
+.Footer{
+    margin: 40px 0;
+    padding: 20px;
+    .rules{
+        padding: 16px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
